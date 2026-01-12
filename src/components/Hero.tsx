@@ -15,7 +15,7 @@ export default function Hero() {
                     <div className="absolute inset-0 bg-foreground/20" />
                 </div>
 
-                <div className="relative z-10 container mx-auto px-6 lg:px-12 pt-24">
+                <div className="relative z-10 container mx-auto px-6 lg:px-12 lg:pt-24">
                     <div className="max-w-3xl">
                         <p
                             className="text-sm font-body tracking-[0.3em] uppercase text-primary-foreground/80 mb-6 animate-fade-up"
@@ -32,7 +32,7 @@ export default function Hero() {
                             <span className="italic">That Inspire</span>
                         </h1>
                         <p
-                            className="font-body text-lg text-primary-foreground/90 max-w-xl mb-10 animate-fade-up"
+                            className="font-body text-sm lg:text-lg text-primary-foreground/90 max-w-xl mb-10 animate-fade-up"
                             style={{ animationDelay: "0.6s", animationFillMode: "backwards" }}
                         >
                             We craft bespoke kitchens and bedrooms that blend timeless elegance
@@ -53,7 +53,7 @@ export default function Hero() {
                     </div>
                 </div>
 
-                <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-fade-in" style={{ animationDelay: "1.2s" }}>
+                <div className="absolute bottom-5 md:bottom-10 left-1/2 -translate-x-1/2 animate-fade-in" style={{ animationDelay: "1.2s" }}>
                     <div className="flex flex-col items-center gap-2 text-primary-foreground/60">
                         <span className="text-xs tracking-widest uppercase">Scroll</span>
                         <div className="w-px h-12 bg-primary-foreground/40" />

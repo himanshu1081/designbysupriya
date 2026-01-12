@@ -8,10 +8,11 @@ export default function StartAnimation() {
         <div>
             {!hidden && (
                 <motion.div
-                    className="w-full h-screen absolute z-100 bg-[#e9e6e2] overflow-hidden"
+                    className="w-full h-screen absolute z-100 bg-[#edd5b7] overflow-hidden"
                     initial={{ y: 0}}
                     animate={{ y: 1000 }}
                     transition={{ duration: .9, delay: 0.1 }}
+                    
                     onAnimationComplete={() => setHidden(true)}
                 />
             )}
