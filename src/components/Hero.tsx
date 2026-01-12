@@ -1,6 +1,10 @@
+"use client"
 import heroImage from "../../public/images/hero-kitchen.jpg";
 import Image from "next/image";
 import StartAnimation from "../components/StartAnimation";
+import { motion } from "motion/react"
+
+
 export default function Hero() {
     return (
         <div>
@@ -12,36 +16,46 @@ export default function Hero() {
                         alt="Luxury kitchen interior"
                         className="w-full h-full object-cover image-reveal saturate-130 contrast-130 brightness-50"
                     />
-                    <div className="absolute inset-0 bg-foreground/20" />
                 </div>
 
-                <div className="relative z-10 container mx-auto px-6 lg:px-12 lg:pt-24">
+                <div className="md:w-full flex flex-col items-center lg:items-start relative z-10 container mx-auto px-6 lg:px-12 lg:pt-24">
                     <div className="max-w-3xl">
-                        <p
+                        <motion.p
+                            initial={{ y: 20, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            transition={{ duration: .7, delay: .1 }}
                             className="text-sm font-body tracking-[0.3em] uppercase text-primary-foreground/80 mb-6 animate-fade-up"
                             style={{ animationDelay: "0.2s", animationFillMode: "backwards" }}
                         >
                             Architecture & Interior Design
-                        </p>
-                        <h1
+                        </motion.p>
+                        <motion.h1
+                            initial={{ y: 20, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            transition={{ duration: .7, delay: .2 }}
                             className=" text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground leading-[1.1] mb-8 animate-fade-up font-cormorant"
                             style={{ animationDelay: "0.4s", animationFillMode: "backwards" }}
                         >
                             Designing Spaces
                             <br />
                             <span className="italic">That Inspire</span>
-                        </h1>
-                        <p
+                        </motion.h1>
+                        <motion.p
+                            initial={{ y: 20, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            transition={{ duration: .7, delay: .3 }}
                             className="font-body text-sm lg:text-lg text-primary-foreground/90 max-w-xl mb-10 animate-fade-up"
                             style={{ animationDelay: "0.6s", animationFillMode: "backwards" }}
                         >
                             We craft bespoke kitchens and bedrooms that blend timeless elegance
                             with modern functionality, creating spaces where life unfolds
                             beautifully.
-                        </p>
-                        <div
-                            className="flex gap-4 animate-fade-up"
-                            style={{ animationDelay: "0.8s", animationFillMode: "backwards" }}
+                        </motion.p>
+                        <motion.div
+                        initial={{ y: 15, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                transition={{ duration: .7, delay: .4}}
+                            className="flex gap-4"
                         >
                             <a
                                 href="#work"
@@ -49,7 +63,7 @@ export default function Hero() {
                             >
                                 View Our Work
                             </a>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
 

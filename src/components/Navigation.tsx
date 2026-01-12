@@ -73,7 +73,7 @@ const Navigation = () => {
         <a
           href="#contact"
           onClick={() => setActive("contact")}
-          className="hidden md:inline-block text-sm font-body tracking-widest uppercase border border-black px-6 py-3 hover:text-white hover:bg-black transition-all duration-300"
+          className="hidden md:inline-block text-sm font-body tracking-widest uppercase border hover:border-black px-6 py-3 hover:text-white hover:bg-black transition-all duration-300"
         >
           Inquire
         </a>

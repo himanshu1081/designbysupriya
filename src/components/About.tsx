@@ -28,16 +28,16 @@ const About = () => {
             </div>
             <div className="w-full lg:w-2/4 grid grid-cols-2 gap-5 ">
                 <div className="flex gap-10 flex-col">
-                    <div className="bg-white p-5 lg:p-10 w-fit h-fit flex flex-col gap-2 items-center justify-center">
-                        <span className="text-black font-georgia" >
+                    <div className="bg-white p-5 lg:p-10 w-fit h-fit flex flex-col gap-2 items-center justify-center rounded-2xl">
+                        <span className="text-black font-georgia text-2xl" >
                             1+
                         </span>
                         <span>
                             Experience
                         </span>
                     </div>
-                    <div className="bg-white p-5 lg:p-10 w-fit h-fit flex flex-col gap-2 items-center justify-center">
-                        <span className="text-black font-georgia" >
+                    <div className="bg-white p-5 lg:p-10 w-fit h-fit flex flex-col gap-2 items-center justify-center rounded-2xl">
+                        <span className="text-black font-georgia text-2xl" >
                             200+
                         </span>
                         <span>
@@ -46,15 +46,15 @@ const About = () => {
                     </div>
                 </div>
                 <div className="flex gap-10 flex-col mt-10">
-                    <div className="bg-white p-5 lg:p-10 w-fit h-fit flex flex-col gap-2 items-center justify-center">
-                        <span className="text-black font-georgia" >
+                    <div className="bg-white p-5 lg:p-10 w-fit h-fit flex flex-col gap-2 items-center justify-center rounded-2xl">
+                        <span className="text-black font-georgia text-2xl" >
                             1+
                         </span>
                         <span>
                             Experience
                         </span>
                     </div>
-                    <div className="bg-white p-5 lg:p-10 w-fit h-fit flex flex-col gap-2 items-center justify-center">
+                    <div className="bg-white p-5 lg:p-10 w-fit h-fit flex flex-col gap-2 items-center justify-center rounded-2xl">
                         <span className="text-black font-georgia text-2xl" >
                             98%
                         </span>
