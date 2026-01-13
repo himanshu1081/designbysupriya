@@ -47,7 +47,7 @@ export default function Hero() {
                             className="font-body text-sm lg:text-lg text-primary-foreground/90 max-w-xl mb-10 animate-fade-up"
                             style={{ animationDelay: "0.6s", animationFillMode: "backwards" }}
                         >
-                            We craft bespoke kitchens and bedrooms that blend timeless elegance
+                            I craft bespoke kitchens and bedrooms that blend timeless elegance
                             with modern functionality, creating spaces where life unfolds
                             beautifully.
                         </motion.p>
