@@ -15,7 +15,6 @@ export default function Home() {
       <Portfolio />
       <Services />
       <Contact />
-      {/* <ContactInfo/> */}
     </div>
   );
 }
