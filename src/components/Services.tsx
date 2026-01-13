@@ -59,7 +59,7 @@ const Services = () => {
                     </span>
                 </div>
             </div>
-            <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 gap-2 justify-items-center">
+            <div className="grid grid-col-1 md:grid-cols-2 xl:grid-cols-4 gap-2 justify-items-center">
                 {
                     services.map((s, index) => {
                         const Icon = s.icon;

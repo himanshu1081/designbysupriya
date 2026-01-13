@@ -15,21 +15,19 @@ const Navigation = () => {
   }, []);
 
   const linkClass = (id: string) =>
-    `font-body tracking-widest uppercase transition ${
-      active === id
-        ? "text-black"
-        : isScrolled
+    `font-body tracking-widest uppercase transition ${active === id
+      ? "text-black"
+      : isScrolled
         ? "text-black/60"
         : "text-white/60"
     } hover:text-black`;
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 lg:px-20 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 lg:px-20 ${isScrolled
           ? "bg-[#EDE8D0] backdrop-blur-sm py-4 shadow-sm text-black"
           : "bg-transparent py-6"
-      }`}
+        }`}
     >
       <div className="mx-auto px-6 lg:px-12 flex items-center justify-center md:justify-between">
         <div className="font-cormorant text-2xl font-extrabold tracking-wide">
@@ -37,13 +35,7 @@ const Navigation = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-10 text-xs lg:text-sm">
-          <a
-            href="#portfolio"
-            onClick={() => setActive("portfolio")}
-            className={linkClass("portfolio")}
-          >
-            Portfolio
-          </a>
+
 
           <a
             href="#about"
@@ -52,7 +44,13 @@ const Navigation = () => {
           >
             About
           </a>
-
+          <a
+            href="#portfolio"
+            onClick={() => setActive("portfolio")}
+            className={linkClass("portfolio")}
+          >
+            Portfolio
+          </a>
           <a
             href="#services"
             onClick={() => setActive("services")}
