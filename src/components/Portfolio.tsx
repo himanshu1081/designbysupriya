@@ -46,7 +46,7 @@ const Portfolio = () => {
     return (
         <div
             id="portfolio"
-            className="px-1 md:px-5 py-10 bg-[#ede8d0] lg:px-30 min-h-screen text-black/60 ">
+            className="px-1 md:px-5 py-10 bg-[#f9f8f6] lg:px-30 min-h-screen text-black/60 ">
             <div className="w-full flex flex-col justify-center items-center gap-1 md:gap-2">
                 <motion.span
                     initial={{ y: 20, opacity: 0 }}
