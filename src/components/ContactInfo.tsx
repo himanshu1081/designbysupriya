@@ -1,13 +1,24 @@
 
 "use client"
+import { useEffect, useState } from "react";
 import { motion } from "motion/react"
 import PortfolioWork from "./PortfolioWork";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FaPinterest } from "react-icons/fa";
 
 const ContactInfo = () => {
+const [size, setSize] = useState(20);
 
-    const size:number = window.innerWidth < 450 ? 10 : 20;
+useEffect(() => {
+    const handleResize = () => {
+      setSize(window.innerWidth < 450 ? 10 : 20);
+    };
+
+    handleResize(); // run once on mount
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
     return (
         <div className="w-full flex flex-col lg:flex-row justify-between items-start p-3 text-black/50 ">
