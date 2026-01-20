@@ -59,6 +59,13 @@ const Navigation = () => {
             Portfolio
           </a>
           <a
+            href="#testimonials"
+            onClick={() => setActive("about")}
+            className={linkClass("about")}
+          >
+            Testimonials
+          </a>
+          <a
             href="#services"
             onClick={() => setActive("services")}
             className={linkClass("services")}

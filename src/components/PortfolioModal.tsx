@@ -35,7 +35,7 @@ const PortfolioModal = ({ data, close }) => {
                     key={index}
                     src={images[index]}
                     onClick={() => setIsFullscreen(true)}
-                    className="w-full h-[400px] object-cover cursor-zoom-in"
+                    className="w-full h-100 object-cover cursor-zoom-in"
                     initial={{ x: 80, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     exit={{ x: -80, opacity: 0 }}
