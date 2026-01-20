@@ -60,8 +60,8 @@ const Navigation = () => {
           </a>
           <a
             href="#testimonials"
-            onClick={() => setActive("about")}
-            className={linkClass("about")}
+            onClick={() => setActive("testimonials")}
+            className={linkClass("testimonials")}
           >
             Testimonials
           </a>
