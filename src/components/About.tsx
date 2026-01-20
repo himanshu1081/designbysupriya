@@ -11,18 +11,18 @@ const About = () => {
                 </div>
                 <div className="text-2xl lg:text-6xl flex md:gap-1 flex-col font-georgia text-black">
                     <span>
-                        Where Form Meets
+                        Where Style Meets
                     </span>
                     <span className="italic">
-                        Function
+                        Purpose
                     </span>
                 </div>
                 <div className="gap-5 flex flex-col text-sm ">
                     <p>
-                        I believe that exceptional design is born from the marriage of aesthetic beauty and practical purpose. Every kitchen I create is a culinary sanctuary; every bedroom, a personal retreat.
+                        I believe truly memorable design comes from blending beauty with functionality. Each kitchen I craft is a space that inspires cooking and connection, while every bedroom becomes a serene personal retreat.
                     </p>
                     <p>
-                        With 1 year of experience in high-end residential design, I approach each project as a unique opportunity to tell a story—one that reflects the personality, lifestyle, and aspirations of those who will inhabit the space.
+                        With a year of experience in high-end residential design, I treat every project as a unique story—one that reflects the personality, lifestyle, and dreams of the people who live there.
                     </p>
                 </div>
             </div>
@@ -30,7 +30,7 @@ const About = () => {
                 <div className="flex gap-10 flex-col">
                     <div className="bg-[#f9f8f6] p-5 lg:p-10 w-fit h-fit flex flex-col gap-2 items-center justify-center rounded-2xl  border border-black/5">
                         <span className="text-black font-georgia text-2xl" >
-                            1+
+                            3+
                         </span>
                         <span>
                             Experience
@@ -48,10 +48,10 @@ const About = () => {
                 <div className="flex gap-10 flex-col mt-10">
                     <div className="bg-[#f9f8f6] p-5 lg:p-10 w-fit h-fit flex flex-col gap-2 items-center justify-center rounded-2xl border border-black/5">
                         <span className="text-black font-georgia text-2xl" >
-                            1+
+                            50+
                         </span>
                         <span>
-                            Experience
+                            Testimonials
                         </span>
                     </div>
                     <div className="bg-[#f9f8f6]  p-5 lg:p-10 w-fit h-fit flex flex-col gap-2 items-center justify-center rounded-2xl border border-black/5">

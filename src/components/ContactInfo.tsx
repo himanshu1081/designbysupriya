@@ -21,12 +21,12 @@ useEffect(() => {
   }, []);
 
     return (
-        <div className="w-full flex flex-col lg:flex-row justify-between items-start p-3 text-black/50 ">
+        <div className="w-full flex flex-col lg:flex-row justify-between items-start text-black/50 ">
             <div className="flex flex-col w-fit justify-center items-start ">
                 <span className="font-georgia font-bold text-base lg:text-2xl text-black">
                     Studio
                 </span>
-                <span className="text-xs lg:text-base">
+                <span className="text-xs lg:text-sm">
                     147 West 24th Street
                     New York, NY 10011
                 </span>

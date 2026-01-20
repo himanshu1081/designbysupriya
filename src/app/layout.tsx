@@ -5,7 +5,7 @@ import { Cormorant_Garamond, Inter } from "next/font/google";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: "300",
+  weight: ["300", "400", "500", "600", "700"],
   style: "normal",
   variable: "--font-cormorant",
   fallback: ["Georgia", "serif"],
@@ -22,10 +22,11 @@ export const metadata: Metadata = {
 };
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${cormorant.variable} ${inter.variable} font-inter `}
-      >
+    <html
+      lang="en"
+      className={`${cormorant.variable} ${inter.variable}`}
+    >
+      <body className="font-inter">
         <SmoothScroll>
           {children}
         </SmoothScroll>
@@ -33,3 +34,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+

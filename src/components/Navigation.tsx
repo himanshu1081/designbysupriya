@@ -25,12 +25,12 @@ const Navigation = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 lg:px-20 ${isScrolled
-          ? "bg-[#e9e6e2] backdrop-blur-sm py-4 shadow-sm text-black"
-          : "bg-transparent py-6"
+        ? "bg-[#e9e6e2] backdrop-blur-sm py-4 shadow-sm text-black"
+        : "bg-transparent py-6"
         }`}
     >
       <div className="mx-auto px-6 lg:px-12 flex items-center justify-center md:justify-between">
-        <div className="font-cormorant text-2xl font-extrabold tracking-wide">
+        <div className={`font-cormorant ${isScrolled ? "text-black" : "text-white"} text-2xl font-bold tracking-wide`}>
           Design by Supriya
         </div>
 
@@ -71,7 +71,7 @@ const Navigation = () => {
         <a
           href="#contact"
           onClick={() => setActive("contact")}
-          className="hidden md:inline-block text-sm font-body tracking-widest uppercase border hover:border-black px-6 py-3 hover:text-white hover:bg-black transition-all duration-300"
+          className={`hidden md:inline-block text-sm font-body tracking-widest uppercase border hover:border-black px-6 py-3 hover:text-white hover:bg-black transition-all duration-300 ${isScrolled ? "text-black" : "text-white"}`}
         >
           Inquire
         </a>
