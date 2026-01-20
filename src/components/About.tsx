@@ -4,12 +4,9 @@ const About = () => {
         <div
             id="about"
             className="px-5 py-10 bg-[#e9e6e2] lg:px-30 min-h-screen 
- flex flex-col md:flex-row justify-between items-start lg:items-center gap-5 md:gap-10 text-black/60">
-            <div className="w-full lg:w-2/4 h-full flex flex-col justify-between items-start gap-5">
-                <div className="uppercase tracking-widest text-xs md:text-sm">
-                    Our Philosophy
-                </div>
-                <div className="text-2xl lg:text-6xl flex md:gap-1 flex-col font-georgia text-black">
+ flex flex-col md:flex-row justify-between items-start md:items-center gap-5 md:gap-10 text-black/60">
+            <div className="w-full lg:w-2/4 h-full flex flex-col justify-between items-start gap-2 lg:gap-20">
+                <div className="text-2xl md:text-4xl lg:text-6xl flex md:gap-1 flex-col font-georgia text-black">
                     <span>
                         Where Style Meets
                     </span>
@@ -26,10 +23,10 @@ const About = () => {
                     </p>
                 </div>
             </div>
-            <div className="w-full lg:w-2/4 grid grid-cols-2 gap-5 ">
+            <div className="w-full lg:w-2/4 grid grid-cols-2 gap-5 text-base lg:text-2xl">
                 <div className="flex gap-10 flex-col">
-                    <div className="bg-[#f9f8f6] p-5 lg:p-10 w-fit h-fit flex flex-col gap-2 items-center justify-center rounded-2xl  border border-black/5">
-                        <span className="text-black font-georgia text-2xl" >
+                    <div className="bg-[#f9f8f6] p-5 lg:p-10 w-fit h-fit flex flex-col gap-2 items-center justify-center rounded-2xl  border border-black/5 ">
+                        <span className="text-black font-georgia " >
                             3+
                         </span>
                         <span>
@@ -37,7 +34,7 @@ const About = () => {
                         </span>
                     </div>
                     <div className="bg-[#f9f8f6]  p-5 lg:p-10 w-fit h-fit flex flex-col gap-2 items-center justify-center rounded-2xl  border border-black/5">
-                        <span className="text-black font-georgia text-2xl" >
+                        <span className="text-black font-georgia" >
                             200+
                         </span>
                         <span>
@@ -47,7 +44,7 @@ const About = () => {
                 </div>
                 <div className="flex gap-10 flex-col mt-10">
                     <div className="bg-[#f9f8f6] p-5 lg:p-10 w-fit h-fit flex flex-col gap-2 items-center justify-center rounded-2xl border border-black/5">
-                        <span className="text-black font-georgia text-2xl" >
+                        <span className="text-black font-georgia " >
                             50+
                         </span>
                         <span>
@@ -55,7 +52,7 @@ const About = () => {
                         </span>
                     </div>
                     <div className="bg-[#f9f8f6]  p-5 lg:p-10 w-fit h-fit flex flex-col gap-2 items-center justify-center rounded-2xl border border-black/5">
-                        <span className="text-black font-georgia text-2xl" >
+                        <span className="text-black font-georgia" >
                             98%
                         </span>
                         <span>

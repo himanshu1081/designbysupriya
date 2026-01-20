@@ -1,6 +1,15 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { Cormorant_Garamond, Inter } from "next/font/google";
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  style: "normal",
+  variable: "--font-cormorant",
+  fallback: ["Georgia", "serif"],
+});
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,13 +39,11 @@ const Navigation = () => {
         }`}
     >
       <div className="mx-auto px-6 lg:px-12 flex items-center justify-center md:justify-between">
-        <div className={`font-cormorant ${isScrolled ? "text-black" : "text-white"} text-2xl font-bold tracking-wide`}>
+        <div className={`${cormorant.className} ${isScrolled ? "text-black" : "text-white"} text-2xl font-semibold tracking-wide`}>
           Design by Supriya
         </div>
 
         <div className="hidden md:flex items-center gap-10 text-xs lg:text-sm">
-
-
           <a
             href="#about"
             onClick={() => setActive("about")}
