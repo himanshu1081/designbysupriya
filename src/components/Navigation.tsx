@@ -39,7 +39,7 @@ const Navigation = () => {
         }`}
     >
       <div className="mx-auto px-6 lg:px-12 flex items-center justify-center md:justify-between">
-        <div className={`${cormorant.className} ${isScrolled ? "text-black" : "text-white"} text-2xl font-semibold tracking-wide`}>
+        <div className={`${cormorant.className} ${isScrolled ? "text-black" : "text-white"} text-xl lg:text-2xl font-semibold tracking-wide whitespace-nowrap`}>
           Design by Supriya
         </div>
 
@@ -81,14 +81,6 @@ const Navigation = () => {
             Contact
           </a>
         </div>
-
-        <a
-          href="#contact"
-          onClick={() => setActive("contact")}
-          className={`hidden md:inline-block text-sm font-body tracking-widest uppercase border hover:border-black px-6 py-3 hover:text-white hover:bg-black transition-all duration-300 ${isScrolled ? "text-black" : "text-white"}`}
-        >
-          Inquire
-        </a>
       </div>
     </nav>
   );

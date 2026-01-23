@@ -1,62 +1,41 @@
 "use client"
 import { motion } from "motion/react"
+
 const testimonials = [
   {
     id: 1,
-    name: "Sophia Williams",
-    role: "Homeowner, London",
+    name: "Yilan shi",
+    role: "Luxury Property Manager",
     image: "https://randomuser.me/api/portraits/women/44.jpg",
     quote:
-      "Working with this team was effortless. Every detail felt intentional and timeless.",
+      "Overall, it was a smooth and pleasant experience. We’re genuinely happy with Supriya’s work and would definitely recommend her.",
   },
   {
     id: 2,
-    name: "Daniel Carter",
+    name: "Jorina Haskhasa",
     role: "Interior Enthusiast",
     image: "https://randomuser.me/api/portraits/men/32.jpg",
     quote:
-      "They understood the vision instantly and executed it beyond expectations.",
+      "Supriya was very easy to work with and actually listened to what we wanted. The designs feel practical, modern, and well planned.",
   },
   {
     id: 3,
-    name: "Emily Johnson",
-    role: "Property Developer",
-    image: "https://randomuser.me/api/portraits/women/68.jpg",
-    quote:
-      "Elegant, minimal, and extremely professional. Would 100% recommend.",
-  },
-  {
-    id: 4,
-    name: "Michael Anderson",
-    role: "Real Estate Consultant",
-    image: "https://randomuser.me/api/portraits/men/75.jpg",
-    quote:
-      "The attention to detail and design sensibility truly sets them apart.",
-  },
-  {
-    id: 5,
-    name: "Isabella Martinez",
-    role: "Studio Apartment Owner",
-    image: "https://randomuser.me/api/portraits/women/21.jpg",
-    quote:
-      "They transformed my space into something I actually enjoy living in every day.",
-  },
-  {
-    id: 6,
-    name: "Oliver Brown",
-    role: "Luxury Property Manager",
+    name: "Henry",
+    role: "Homeowner, London",
     image: "https://randomuser.me/api/portraits/men/19.jpg",
     quote:
-      "A seamless experience from concept to execution. Highly reliable team.",
+      "We’re really happy with how the kitchen turned out. Supriya understood our needs clearly and designed a layout that works perfectly for us.",
   },
 ]
 
-
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="bg-[#e9e6e2] py-20 px-4 md:px-10 min-h-screen">
+    <section
+      id="testimonials"
+      className="bg-[#e9e6e2] py-24 px-4 md:px-40"
+    >
       {/* Heading */}
-      <div className="text-center mb-14">
+      <div className="text-center mb-16">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -79,7 +58,7 @@ const Testimonials = () => {
       </div>
 
       {/* Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {testimonials.map((t, i) => (
           <motion.div
             key={t.id}
@@ -88,30 +67,20 @@ const Testimonials = () => {
             transition={{ duration: 0.5, delay: i * 0.1 }}
             viewport={{ once: true }}
             whileHover={{ y: -6 }}
-            className="bg-[#f9f8f6] p-6 rounded-xl flex flex-col justify-between"
+            className="bg-[#f9f8f6] p-8 rounded-xl flex flex-col gap-4"
           >
-            {/* Quote */}
-            <p className="text-black/70 text-sm leading-relaxed mb-6">
+            <div>
+              <p className="text-black font-medium text-sm">
+                {t.name}
+              </p>
+              <p className="text-xs text-black/50">
+                {t.role}
+              </p>
+            </div>
+
+            <p className="text-black/70 text-sm leading-relaxed">
               “{t.quote}”
             </p>
-
-            {/* Client */}
-            <div className="flex items-center gap-3">
-              <img
-                src={t.image}
-                alt={t.name}
-                className="w-12 h-12 rounded-full object-cover"
-              />
-
-              <div>
-                <p className="text-black font-medium text-sm">
-                  {t.name}
-                </p>
-                <p className="text-xs text-black/50">
-                  {t.role}
-                </p>
-              </div>
-            </div>
           </motion.div>
         ))}
       </div>

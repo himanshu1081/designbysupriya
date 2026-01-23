@@ -49,17 +49,32 @@ const Services = () => {
             id="services"
             className="px-5 py-10 bg-[#221f1c] lg:px-30 flex flex-col items-start justify-center min-h-screen text-white">
             <div className="mb-10">
-                <div className="text-white/60 text-sm">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
+                    className="text-white/60 text-sm">
                     What We Offer
-                </div>
-                <div className="text-2xl md:text-3xl lg:text-4xl flex flex-col gap-1 font-georgia">
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: .1 }}
+                    viewport={{ once: true }} 
+                    className="text-2xl md:text-3xl lg:text-4xl flex flex-col gap-1 font-georgia">
                     Comprehensive Design
                     <span className="italic">
                         Services
                     </span>
-                </div>
+                </motion.div>
             </div>
-            <div className="grid grid-col-1 md:grid-cols-2 xl:grid-cols-4 gap-2 justify-items-center">
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: .2 }}
+                viewport={{ once: true }}
+                className="grid grid-col-1 md:grid-cols-2 xl:grid-cols-4 gap-2 justify-items-center">
                 {
                     services.map((s, index) => {
                         const Icon = s.icon;
@@ -68,8 +83,8 @@ const Services = () => {
                         )
                     })
                 }
-            </div>
-        </div>
+            </motion.div>
+        </div >
     );
 };
 

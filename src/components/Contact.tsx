@@ -13,15 +13,17 @@ const Contact = () => {
                 <div className="w-full flex flex-col justify-center items-center gap-1 md:gap-2 ">
                     <motion.span
                         initial={{ y: 20, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: .7, delay: .1 }}
+                        viewport={{ once: true }}
                         className="text-xs md:text-sm uppercase tracking-widest">
                         Start Your Journey
                     </motion.span>
                     <motion.span
                         initial={{ y: 20, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: .7, delay: .2 }}
+                        viewport={{ once: true }}
                         className="text-3xl md:text-6xl font-georgia flex flex-col justify-center items-center text-black">
                         Let's Create Something <span className="italic">Beautiful Together</span>
                     </motion.span>
@@ -36,9 +38,14 @@ const Contact = () => {
                         Contact Us
                     </div>
                 </div> */}
-                <div className="border-t border-black/20 w-full flex justify-between items-start lg:pb-5 text-black/50">
-                </div>
-                    <ContactInfo />
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: .4 }}
+                    viewport={{ once: true }}
+                    className="border-t border-black/20 w-full flex justify-between items-start lg:pb-5 text-black/50">
+                </motion.div>
+                <ContactInfo />
             </div>
         </div>
     );

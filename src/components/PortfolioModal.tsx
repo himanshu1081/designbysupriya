@@ -3,15 +3,13 @@ import { motion, AnimatePresence } from "motion/react"
 import { useState } from "react"
 
 const PortfolioModal = ({ data, close }) => {
-  const images = [data.image, data.image, data.image]
+  const images = data.image
   const [index, setIndex] = useState(0)
   const [isFullscreen, setIsFullscreen] = useState(false)
 
   return (
     <>
-      <div className="">
-
-        {/* MAIN MODAL */}
+      <div>
         <AnimatePresence>
           <motion.div
             className="fixed inset-0 z-40 bg-black/70 flex items-center justify-center"
@@ -28,7 +26,6 @@ const PortfolioModal = ({ data, close }) => {
               transition={{ type: "spring", stiffness: 200 }}
               className="bg-[#f9f8f6] rounded-xl p-4 w-[90%] md:w-[70%] lg:w-[50%]"
             >
-              {/* Carousel */}
               <div className="relative overflow-hidden rounded-lg">
                 <AnimatePresence mode="wait">
                   <motion.img
@@ -43,7 +40,6 @@ const PortfolioModal = ({ data, close }) => {
                   />
                 </AnimatePresence>
 
-                {/* Prev */}
                 <button
                   onClick={() =>
                     setIndex((index - 1 + images.length) % images.length)
@@ -53,7 +49,6 @@ const PortfolioModal = ({ data, close }) => {
                   ‹
                 </button>
 
-                {/* Next */}
                 <button
                   onClick={() =>
                     setIndex((index + 1) % images.length)
@@ -64,7 +59,7 @@ const PortfolioModal = ({ data, close }) => {
                 </button>
               </div>
 
-              {/* Dots */}
+
               <div className="flex justify-center gap-2 mt-4">
                 {images.map((_, i) => (
                   <button
@@ -81,14 +76,14 @@ const PortfolioModal = ({ data, close }) => {
                   {data.title}
                 </h2>
                 <p className="text-sm text-black/60">
-                  {data.category} · {data.year}
+                  {data.category}
                 </p>
               </div>
             </motion.div>
           </motion.div>
         </AnimatePresence>
 
-        {/* FULLSCREEN IMAGE VIEW */}
+
         <AnimatePresence>
           {isFullscreen && (
             <motion.div
