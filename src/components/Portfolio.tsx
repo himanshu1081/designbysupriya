@@ -41,7 +41,6 @@ const portfolioData = [
     category: "Kitchen Design",
     image: [
       "/images/Project 4/Main.png",
-      "/images/Project 4/1.png",
     ],
   },
   {
@@ -50,7 +49,6 @@ const portfolioData = [
     category: "Kitchen Design",
     image: [
       "/images/Project 5/Main.png",
-      "/images/Project 5/1.png",
     ],
   },
   {
@@ -59,8 +57,6 @@ const portfolioData = [
     category: "Kitchen Design",
     image: [
       "/images/Project 6/Main.png",
-      "/images/Project 6/1.png",
-      "/images/Project 6/2.png",
     ],
   },
   {
@@ -70,6 +66,7 @@ const portfolioData = [
     image: [
       "/images/Project 7/Main.png",
       "/images/Project 7/1.png",
+      "/images/Project 7/2.png",
     ],
   },
   {
@@ -89,6 +86,7 @@ const portfolioData = [
     image: [
       "/images/Project 9/Main.png",
       "/images/Project 9/1.png",
+      "/images/Project 9/2.png",
     ],
   },
   {
