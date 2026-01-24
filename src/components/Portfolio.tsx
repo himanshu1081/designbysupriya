@@ -168,7 +168,7 @@ const Portfolio = () => {
                 />
 
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                <div className="absolute inset-0 bg-black/20 hover:bg-black/40 opacity-100 transition-opacity flex items-end p-4">
                   <div>
                     <h3 className="text-white font-georgia text-lg">
                       {item.title}
@@ -186,7 +186,7 @@ const Portfolio = () => {
         <div className="flex justify-center mt-12">
           <button
             onClick={() => setShowAll(!showAll)}
-            className="border border-black px-6 py-3 text-sm uppercase tracking-wide text-black hover:bg-black hover:text-white transition"
+            className="border border-black px-6 py-3 text-sm uppercase tracking-wide text-black hover:bg-black hover:text-white transition cursor-pointer"
           >
             {showAll ? "Show Less Projects" : "View All Projects"}
           </button>

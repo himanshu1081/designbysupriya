@@ -32,7 +32,7 @@ const Testimonials = () => {
   return (
     <section
       id="testimonials"
-      className="bg-[#e9e6e2] py-24 px-4 md:px-40"
+      className="bg-[#e9e6e2] py-24 px-4 lg:px-40"
     >
       {/* Heading */}
       <div className="text-center mb-16">
@@ -58,7 +58,7 @@ const Testimonials = () => {
       </div>
 
       {/* Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {testimonials.map((t, i) => (
           <motion.div
             key={t.id}
