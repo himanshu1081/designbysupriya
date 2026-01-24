@@ -28,6 +28,19 @@ const Contact = () => {
                         Let's Create Something <span className="italic">Beautiful Together</span>
                     </motion.span>
                 </div>
+                <motion.div
+                    initial={{ y: 20, opacity: 0 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: .7, delay: .3 }}
+                    viewport={{ once: true }}
+                    className="text-xs lg:text-sm flex flex-col gap-2 text-white">
+                    <span className="whitespace-nowrap bg-black p-2">
+                        Email : supriya.chaudhary@wrenkitchens.com
+                    </span>
+                    <span className="whitespace-nowrap border border-black p-2 text-center text-black ">
+                        Contact: +44 7344327193
+                    </span>
+                </motion.div>
             </div>
             <div className=" w-full flex flex-col justify-center items-center">
                 {/* <div className="w-2/4 md:w-3/4 uppercase h-fit flex flex-col md:flex-row justify-around items-center my-5 cursor-pointer gap-5 md:gap-0">
@@ -38,14 +51,14 @@ const Contact = () => {
                         Contact Us
                     </div>
                 </div> */}
-                <motion.div
+                {/* <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: .4 }}
                     viewport={{ once: true }}
                     className="border-t border-black/20 w-full flex justify-between items-start lg:pb-5 text-black/50">
                 </motion.div>
-                <ContactInfo />
+                <ContactInfo /> */}
             </div>
         </div>
     );
