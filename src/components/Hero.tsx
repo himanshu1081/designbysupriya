@@ -61,7 +61,7 @@ export default function Hero() {
                                 href="#portfolio"
                                 className="text-xs md:text-sm tracking-widest uppercase px-4 py-2 md:px-8 md:py-4 transition-all duration-300 ease-in lg:border bg-black text-white border-black hover:border-white lg:hover:bg-white lg:hover:text-black"
                             >
-                                View Our Work
+                                View my Work
                             </a>
                         </motion.div>
                     </div>

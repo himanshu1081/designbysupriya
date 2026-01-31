@@ -174,7 +174,7 @@ const Portfolio = () => {
                       {item.title}
                     </h3>
                     <p className="text-white/70 text-xs">
-                      {item.category}
+                      Click to view project
                     </p>
                   </div>
                 </div>

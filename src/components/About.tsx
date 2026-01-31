@@ -19,7 +19,7 @@ const About = () => {
                         I believe truly memorable design comes from blending beauty with functionality. Each kitchen I craft is a space that inspires cooking and connection, while every bedroom becomes a serene personal retreat.
                     </p>
                     <p>
-                        With a year of experience in high-end residential design, I treat every project as a unique story—one that reflects the personality, lifestyle, and dreams of the people who live there.
+                        With over four years of experience in high-end residential design, I treat every project as a unique story—one that reflects the personality, lifestyle, and dreams of the people who live there.
                     </p>
                 </div>
             </div>
@@ -27,7 +27,7 @@ const About = () => {
                 <div className="flex gap-10 flex-col">
                     <div className="bg-[#f9f8f6] p-5 lg:p-10 w-fit h-fit flex flex-col gap-2 items-center justify-center rounded-2xl  border border-black/5 ">
                         <span className="text-black font-georgia " >
-                            3+
+                            4+
                         </span>
                         <span>
                             Experience
