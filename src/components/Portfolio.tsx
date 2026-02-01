@@ -146,7 +146,7 @@ const Portfolio = () => {
             transition={{ delay: 0.1 }}
             className="text-4xl md:text-6xl font-georgia text-black"
           >
-            Our <span className="italic">Portfolio</span>
+            My <span className="italic">Portfolio</span>
           </motion.h2>
         </div>
 
