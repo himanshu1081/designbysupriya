@@ -113,6 +113,25 @@ const portfolioData = [
       "/images/Project 12/Main.png",
     ],
   },
+  {
+    id: 13,
+    title: "Kitchen Design 13",
+    category: "Kitchen Design",
+    image: [
+      "/images/Project 13/Main.jpg",
+      "/images/Project 13/1.jpg",
+    ],
+  },
+  {
+    id: 14,
+    title: "Kitchen Design 14",
+    category: "Kitchen Design",
+    image: [
+      "/images/Project 14/Main.jpg",
+      "/images/Project 14/1.jpg",
+
+    ],
+  },
 ]
 
 
