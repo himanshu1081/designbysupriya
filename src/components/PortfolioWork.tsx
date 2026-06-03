@@ -2,6 +2,7 @@
 import { motion } from "motion/react"
 import { useState } from "react"
 import PortfolioModal from "./PortfolioModal"
+import Image from 'next/image'
 
 const PortfolioWork = ({ data }) => {
   const [open, setOpen] = useState(false)
@@ -15,11 +16,11 @@ const PortfolioWork = ({ data }) => {
         viewport={{ once: true }}
         className="mb-5 break-inside-avoid cursor-pointer overflow-hidden rounded-xl bg-[#e9e6e2]"
       >
-        <img
-          src={data.image[0]}
+         <Image
+     src={data.image[0]}
           alt={data.title}
           className="w-full object-cover hover:brightness-90 transition"
-        />
+    />
 
         <div className="p-3">
           <div className="flex justify-between text-xs opacity-70">
