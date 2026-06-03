@@ -2,6 +2,7 @@
 import { useState } from "react"
 import { motion } from "motion/react"
 import PortfolioModal from "./PortfolioModal"
+import Image from 'next/image'
 
 const portfolioData = [
   {
@@ -180,7 +181,7 @@ const Portfolio = () => {
               onClick={() => setSelected(item)}
             >
               <div className="relative overflow-hidden rounded-xl">
-                <img
+                <Image
                   src={item.image[0]}
                   alt={item.title}
                   className="w-full object-cover transition-transform duration-500 group-hover:scale-105"
